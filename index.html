@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iwak AI Premium v2.0</title>
+    <title>Asli Ini AI Premium v2.0</title>
     <!-- Puter JS SDK -->
     <script src="https://js.puter.com/v2/"></script>
     <!-- Tailwind CSS -->
@@ -56,11 +56,11 @@
         <!-- Header Sidebar -->
         <div class="p-4 border-b border-slate-800 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="https://yt3.googleusercontent.com/QhTdeIH7fsWlSkMBIWh3LShiqEkqyepkEUPICnid7P1nZhvISkT2SDQWXhpcPjbSTuJpcuB60A=s160-c-k-c0x00ffffff-no-rj" alt="Logo" class="w-10 h-10 rounded-full ring-2 ring-emerald-500">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&auto=format&fit=crop&q=60" alt="Logo Asli Ini" class="w-10 h-10 rounded-full ring-2 ring-emerald-500 object-cover">
                 <div>
-                    <h2 class="font-bold text-lg text-emerald-400">Iwak AI</h2>
+                    <h2 class="font-bold text-lg text-emerald-400">Asli Ini</h2>
                     <span class="text-xs text-slate-400 flex items-center gap-1">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Premium Active
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Absurd Mode Active
                     </span>
                 </div>
             </div>
@@ -85,12 +85,12 @@
 
         <!-- Pemilih Persona / Gaya Jawab -->
         <div class="p-4 border-t border-slate-800 bg-slate-950/50">
-            <label class="text-xs font-semibold text-slate-400 block mb-2 uppercase tracking-wider">Mode Gaya Jawab (Persona)</label>
+            <label class="text-xs font-semibold text-slate-400 block mb-2 uppercase tracking-wider">Mode Absurd (Persona)</label>
             <select id="persona" class="w-full bg-slate-800 text-slate-100 border border-slate-700 rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                <option value="default">Default (Ramah & Informatif)</option>
-                <option value="sarcastic">Sarkasme (Kocak & Menyindir)</option>
-                <option value="coder">Senior Developer (Fokus Kode Efisien)</option>
-                <option value="wise">Guru Bijak (Penuh Filosofi)</option>
+                <option value="absurd">Absurd & Nyeleneh (Penuh lawakan & logika jungkir balik)</option>
+                <option value="sarcastic">Sarkasme (Kocak & Menyindir halus)</option>
+                <option value="coder">Senior Developer Absurd (Kode jalan, tapi penjelasannya ngelantur)</option>
+                <option value="wise">Guru Filsafat Kebablasan (Sok bijak tapi gak nyambung)</option>
             </select>
         </div>
     </aside>
@@ -105,10 +105,10 @@
                 </button>
                 <div>
                     <h3 class="font-semibold text-slate-100 flex items-center gap-2">
-                        Iwak AI 
-                        <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">gpt-5.4-nano</span>
+                        Asli Ini 
+                        <span class="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">absurd-v2.0</span>
                     </h3>
-                    <p class="text-xs text-slate-400" id="chat-meta-subtitle">Obrolan Aktif</p>
+                    <p class="text-xs text-slate-400" id="chat-meta-subtitle">Obrolan Absurd Aktif</p>
                 </div>
             </div>
             
@@ -125,27 +125,27 @@
 
         <!-- Tampilan Awal saat Chat Masih Kosong (Starter Kit) -->
         <div id="welcome-screen" class="flex-1 overflow-y-auto p-4 md:p-6 flex flex-col items-center justify-center text-center h-full max-w-lg mx-auto space-y-6">
-            <img src="https://yt3.googleusercontent.com/QhTdeIH7fsWlSkMBIWh3LShiqEkqyepkEUPICnid7P1nZhvISkT2SDQWXhpcPjbSTuJpcuB60A=s160-c-k-c0x00ffffff-no-rj" alt="Iwak Logo" class="w-20 h-20 rounded-full ring-4 ring-emerald-500/30 animate-bounce">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&auto=format&fit=crop&q=60" alt="Asli Ini Logo" class="w-20 h-20 rounded-full ring-4 ring-emerald-500/30 object-cover animate-bounce">
             <div>
-                <h2 class="text-2xl font-extrabold text-white">Ada yang bisa Iwak AI bantu?</h2>
-                <p class="text-sm text-slate-400 mt-2">Iwak AI siap menulis kode, merangkum data, menggambar visual, atau menganalisis gambar Anda secara instan.</p>
+                <h2 class="text-2xl font-extrabold text-white">Ada yang bisa dibantu oleh Asli Ini?</h2>
+                <p class="text-sm text-slate-400 mt-2">Siap meracik jawaban absurd, menulis kode ngawur tapi fungsional, atau menggambar hal-hal di luar nalar secara instan.</p>
             </div>
             <div class="grid grid-cols-2 gap-3 w-full">
-                <button onclick="useQuickPrompt('/image Lukisan cat air seekor ikan maskot yang lucu sedang berenang')" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
-                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">🎨 Buat Gambar</span>
-                    Hasilkan karya seni kecerdasan buatan...
+                <button onclick="useQuickPrompt('/image Lukisan surealis kucing naik roket ke planet pisang')" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
+                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">🎨 Gambar Absurd</span>
+                    Hasilkan visual halusinasi tingkat tinggi...
                 </button>
                 <button onclick="triggerAnalyzeImageModal()" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
-                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">🔍 Analisis Gambar</span>
-                    Analisis objek dari URL gambar...
+                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">🔍 Roasting Gambar</span>
+                    Analisis URL gambar dengan komentar pedas...
                 </button>
-                <button onclick="useQuickPrompt('Buatkan kode Python untuk memantul bola 2D')" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
-                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">💻 Tulis Kode</span>
-                    Fungsi logis & terstruktur...
+                <button onclick="useQuickPrompt('Buatkan kode Python untuk simulasi gravitasi dunia terbalik')" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
+                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">💻 Kode Nyeleneh</span>
+                    Fungsi program tingkat tinggi yang bikin pusing...
                 </button>
-                <button onclick="useQuickPrompt('Kasih teka-teki logika tersulit lengkap jawaban!')" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
-                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">🧠 Tebak Logika</span>
-                    Asah otak dengan teka-teki sulit...
+                <button onclick="useQuickPrompt('Kasih tahu teori konspirasi paling gak penting tapi masuk akal!')" class="p-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500 rounded-xl text-left text-xs transition duration-200 group">
+                    <span class="font-bold text-slate-300 group-hover:text-emerald-400 block mb-1">🧠 Teori Absurd</span>
+                    Asah otak dengan hal-hal tidak berfaedah...
                 </button>
             </div>
         </div>
@@ -158,13 +158,13 @@
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                 </button>
                 <div class="flex-1 relative">
-                    <input id="question" type="text" placeholder="Tulis pesan ke Iwak AI... (Gunakan '/image [prompt]' untuk menggambar)" onkeydown="handleInputKeydown(event)" class="w-full bg-slate-800 border border-slate-700 rounded-2xl pl-4 pr-12 py-3 text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition duration-200 text-sm">
+                    <input id="question" type="text" placeholder="Ketik pesan ke Asli Ini... (Gunakan '/image [prompt]' untuk menggambar)" onkeydown="handleInputKeydown(event)" class="w-full bg-slate-800 border border-slate-700 rounded-2xl pl-4 pr-12 py-3 text-slate-100 placeholder-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition duration-200 text-sm">
                     <button onclick="askAI()" class="absolute right-2 top-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl p-2 transition duration-200 flex items-center justify-center">
                         <svg class="w-5 h-5 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                     </button>
                 </div>
             </div>
-            <p class="text-[10px] text-center text-slate-500 mt-2">Ditenagai oleh Puter AI SDK, GPT-5.4-Nano, & GPT Image 2. Obrolan tersimpan lokal otomatis.</p>
+            <p class="text-[10px] text-center text-slate-500 mt-2">Ditenagai oleh Puter AI SDK & Jiwa Absurd "Asli Ini". Tersimpan otomatis di lokal.</p>
         </footer>
     </main>
 
@@ -173,18 +173,18 @@
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl w-full max-w-md shadow-2xl space-y-4">
             <h3 class="text-lg font-bold text-white flex items-center gap-2">
                 <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Analisis Gambar
+                Analisis Gambar oleh Asli Ini
             </h3>
-            <p class="text-xs text-slate-400">Masukkan tautan URL gambar (format JPG/PNG/WEBP) untuk dibahas, dijelaskan, atau dijabarkan oleh Iwak AI.</p>
+            <p class="text-xs text-slate-400">Masukkan tautan URL gambar (format JPG/PNG/WEBP) untuk dibongkar rahasianya atau di-roasting habis-habisan.</p>
             
             <div class="space-y-3">
                 <div>
                     <label class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">URL Gambar</label>
-                    <input id="image-url" type="url" placeholder="https://contoh.com/gambar-kucing.jpg" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-emerald-500">
+                    <input id="image-url" type="url" placeholder="https://contoh.com/gambar-aneh.jpg" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-emerald-500">
                 </div>
                 <div>
-                    <label class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Pertanyaan / Instruksi Anda</label>
-                    <input id="image-instruction" type="text" placeholder="Jelaskan objek apa saja yang terlihat di gambar ini?" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-emerald-500">
+                    <label class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Permintaan / Pertanyaan Anda</label>
+                    <input id="image-instruction" type="text" placeholder="Roasting gambar ini dari sudut pandang paling absurd!" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-emerald-500">
                 </div>
             </div>
 
@@ -201,8 +201,8 @@
         let currentSessionId = 'default_session';
         let chatSessions = {};
 
-        // Avatar & Info Default
-        const AI_AVATAR = "blob:https://gemini.google.com/cfb41f29-8e68-4f79-a189-b009dea71f3a";
+        // Avatar & Info Default (Asli Ini)
+        const AI_AVATAR = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&auto=format&fit=crop&q=60";
         const AI_NAME = "Asli Ini";
 
         // Fungsi bantu mengekstrak teks string murni dari objek balasan Puter AI
@@ -210,12 +210,10 @@
             if (!response) return "";
             if (typeof response === 'string') return response;
             
-            // Periksa jika objek memiliki properti langsung .text
             if (response.text && typeof response.text === 'string') {
                 return response.text;
             }
             
-            // Penanganan tipe respons pesan Puter: response.message
             if (response.message) {
                 if (typeof response.message === 'string') {
                     return response.message;
@@ -235,7 +233,6 @@
                 }
             }
             
-            // Format OpenAI choices
             if (response.choices && Array.isArray(response.choices) && response.choices[0]) {
                 const choice = response.choices[0];
                 if (choice.message && typeof choice.message.content === 'string') {
@@ -246,7 +243,6 @@
                 }
             }
             
-            // Konversi alternatif terakhir
             try {
                 return JSON.stringify(response);
             } catch (e) {
@@ -256,11 +252,10 @@
 
         // Load Sesi dari LocalStorage pada saat startup
         window.addEventListener('load', () => {
-            const saved = localStorage.getItem('iwak_ai_sessions');
+            const saved = localStorage.getItem('asli_ini_ai_sessions');
             if (saved) {
                 try {
                     chatSessions = JSON.parse(saved);
-                    // Bersihkan data historis jika ada chat lama yang tersimpan dalam format objek
                     Object.keys(chatSessions).forEach(sid => {
                         if (chatSessions[sid] && Array.isArray(chatSessions[sid].messages)) {
                             chatSessions[sid].messages.forEach(msg => {
@@ -274,13 +269,12 @@
                     console.error("Gagal parsing sesi lokal:", e);
                 }
                 
-                // Dapatkan ID sesi terakhir atau gunakan default
                 const lastSession = Object.keys(chatSessions)[0];
                 if (lastSession) currentSessionId = lastSession;
             }
             if (Object.keys(chatSessions).length === 0) {
                 chatSessions[currentSessionId] = {
-                    title: 'Obrolan Perdana 🐟',
+                    title: 'Obrolan Absurd 🌀',
                     messages: []
                 };
             }
@@ -290,7 +284,7 @@
 
         // Simpan ke LocalStorage
         function saveToStorage() {
-            localStorage.setItem('iwak_ai_sessions', JSON.stringify(chatSessions));
+            localStorage.setItem('asli_ini_ai_sessions', JSON.stringify(chatSessions));
         }
 
         // Toggle Sidebar
@@ -316,7 +310,7 @@
         function startNewChat() {
             const newId = 'session_' + Date.now();
             chatSessions[newId] = {
-                title: 'Obrolan Baru #' + (Object.keys(chatSessions).length + 1),
+                title: 'Obrolan Absurd #' + (Object.keys(chatSessions).length + 1),
                 messages: []
             };
             currentSessionId = newId;
@@ -324,13 +318,12 @@
             renderSessions();
             renderMessages();
             
-            // Tutup sidebar di versi mobile
             if (window.innerWidth < 768) toggleSidebar();
         }
 
         // Bersihkan riwayat chat sesi saat ini
         function clearCurrentChat() {
-            if (confirm("Apakah kamu yakin ingin menghapus obrolan ini secara permanen?")) {
+            if (confirm("Yakin mau menghapus memori absurd ini secara permanen?")) {
                 chatSessions[currentSessionId].messages = [];
                 saveToStorage();
                 renderMessages();
@@ -379,7 +372,7 @@
             if (currentSessionId === id) {
                 currentSessionId = Object.keys(chatSessions)[0] || 'default_session';
                 if (!chatSessions[currentSessionId]) {
-                    chatSessions[currentSessionId] = { title: 'Obrolan Baru 🐟', messages: [] };
+                    chatSessions[currentSessionId] = { title: 'Obrolan Absurd 🌀', messages: [] };
                 }
             }
             saveToStorage();
@@ -393,17 +386,14 @@
             const welcome = document.getElementById('welcome-screen');
             const messages = chatSessions[currentSessionId]?.messages || [];
 
-            // Update sub-judul
-            document.getElementById('chat-meta-subtitle').innerText = chatSessions[currentSessionId]?.title || 'Obrolan Aktif';
+            document.getElementById('chat-meta-subtitle').innerText = chatSessions[currentSessionId]?.title || 'Obrolan Absurd Aktif';
 
             if (messages.length === 0) {
-                // Tampilkan welcome screen dan sembunyikan container pesan kosong
                 container.classList.add('hidden');
                 welcome.classList.remove('hidden');
                 return;
             }
 
-            // Sembunyikan welcome screen dan tampilkan container pesan
             welcome.classList.add('hidden');
             container.classList.remove('hidden');
             container.innerHTML = '';
@@ -412,15 +402,13 @@
                 const messageWrapper = document.createElement("div");
                 messageWrapper.className = `flex flex-col md:flex-row gap-3 ${msg.sender === "user" ? "items-end md:justify-end" : "items-start"}`;
 
-                // Ekstrak teks murni dan tangani jika tidak sengaja berupa objek
                 const textString = typeof msg.text === 'object' ? extractTextFromResponse(msg.text) : (msg.text || '');
                 let contentHTML = textString;
                 
-                // Cek apakah pesan merupakan tipe gambar tergenerasi
                 if (msg.type === "image" && msg.imageUrl) {
                     contentHTML = `
                         <div class="space-y-2">
-                            <p class="text-xs text-slate-400 italic">🖼️ Hasil Generasi Gambar:</p>
+                            <p class="text-xs text-slate-400 italic">🖼️ Hasil Manifestasi Visual Absurd:</p>
                             <img src="${msg.imageUrl}" alt="AI Generated Image" class="rounded-xl max-w-full h-auto border border-slate-700 shadow-md hover:scale-105 transition-transform duration-200 cursor-pointer" onclick="window.open('${msg.imageUrl}', '_blank')">
                             <p class="text-[10px] text-slate-500 mt-1">Prompt: "${msg.promptText}"</p>
                         </div>
@@ -428,26 +416,23 @@
                 } else if (msg.sender === "ai") {
                     contentHTML = marked.parse(textString);
                 } else {
-                    // Escape HTML dasar untuk menghindari eksploitasi chat user
                     contentHTML = textString.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
                     
-                    // Jika user mengirimkan tautan analisis gambar, visualisasikan di chat
                     if (msg.imageUrlAttached) {
                         contentHTML += `
                             <div class="mt-3 border border-emerald-500/30 p-2 rounded-xl bg-slate-900/50">
-                                <span class="text-[10px] uppercase font-bold text-emerald-400 block mb-1">🔗 Gambar Terlampir:</span>
+                                <span class="text-[10px] uppercase font-bold text-emerald-400 block mb-1">🔗 Gambar yang Dianalisis:</span>
                                 <img src="${msg.imageUrlAttached}" alt="Attached Image" class="w-32 h-auto rounded-lg border border-slate-800">
                             </div>
                         `;
                     }
                 }
 
-                // Amankan teks untuk event click inline JS agar tidak merusak parser quotes/backslash
                 const safeJsText = textString.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, '\\r');
 
                 messageWrapper.innerHTML = `
                     ${msg.sender === "ai" ? `
-                        <img src="${AI_AVATAR}" alt="Avatar" class="w-8 h-8 rounded-full border border-slate-700 flex-shrink-0 mt-1">
+                        <img src="${AI_AVATAR}" alt="Avatar" class="w-8 h-8 rounded-full border border-slate-700 object-cover flex-shrink-0 mt-1">
                     ` : ''}
                     <div class="max-w-[85%] md:max-w-[70%] group">
                         <!-- Header / Metadata -->
@@ -484,25 +469,22 @@
                 container.appendChild(messageWrapper);
             });
 
-            // Re-highlight kode setelah DOM diperbarui
             Prism.highlightAll();
-            
-            // Scroll otomatis ke paling bawah
             container.scrollTop = container.scrollHeight;
         }
 
-        // Tampilkan Indikator Sedang Mengetik / Memproses
-        function showTyping(name, textStatus = "sedang berpikir...") {
+        // Tampilkan Indikator Sedang Mengetik
+        function showTyping(name, textStatus = "sedang merenungi keabsurdan...") {
             const container = document.getElementById("messages");
             const typingWrapper = document.createElement("div");
             typingWrapper.id = "typing";
             typingWrapper.className = "flex items-start gap-3";
 
             typingWrapper.innerHTML = `
-                <img src="${AI_AVATAR}" alt="Avatar" class="w-8 h-8 rounded-full border border-slate-700 flex-shrink-0 mt-1 animate-pulse">
+                <img src="${AI_AVATAR}" alt="Avatar" class="w-8 h-8 rounded-full border border-slate-700 object-cover flex-shrink-0 mt-1 animate-pulse">
                 <div class="max-w-[70%]">
                     <div class="flex items-center gap-2 mb-1 text-xs text-slate-400 px-2">
-                        <span class="font-semibold">${name} ${textStatus}</span>
+                        <span class="font-semibold">${name}${textStatus}</span>
                     </div>
                     <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl rounded-tl-none flex gap-1.5 items-center">
                         <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full dot-bounce"></span>
@@ -515,13 +497,11 @@
             container.scrollTop = container.scrollHeight;
         }
 
-        // Hapus Indikator Mengetik
         function removeTyping() {
             const typing = document.getElementById("typing");
             if (typing) typing.remove();
         }
 
-        // Dapatkan Waktu Sekarang (Format jam:menit)
         function getFormattedTime() {
             const date = new Date();
             const hours = String(date.getHours()).padStart(2, '0');
@@ -540,19 +520,17 @@
             document.getElementById('image-instruction').value = "";
         }
 
-        // Jalankan Analisis Gambar Terpilih
         function submitImageAnalysis() {
             const url = document.getElementById('image-url').value.trim();
-            const instruction = document.getElementById('image-instruction').value.trim() || "Jelaskan gambar ini.";
+            const instruction = document.getElementById('image-instruction').value.trim() || "Analisis gambar ini dengan gaya absurd.";
 
             if (!url) {
-                alert("Silakan masukkan URL gambar terlebih dahulu!");
+                alert("Masukkan URL gambar dulu dong!");
                 return;
             }
 
             closeAnalyzeImageModal();
 
-            // Masukkan pertanyaan pengguna yang menyertakan informasi link gambar
             const time = getFormattedTime();
             chatSessions[currentSessionId].messages.push({
                 text: instruction,
@@ -563,10 +541,9 @@
 
             saveToStorage();
             renderMessages();
-            showTyping(AI_NAME, "sedang menganalisis gambar...");
+            showTyping(AI_NAME, "sedang menatap gambar dengan tatapan kosong...");
 
-            // Panggil API Puter.js v2 untuk analisis gambar
-            puter.ai.chat(instruction, url, { model: "gpt-5.4-nano" })
+            puter.ai.chat(`Anda adalah Asli Ini, AI dengan kepribadian sangat absurd dan nyeleneh. ${instruction}`, url, { model: "gpt-5.4-nano" })
                 .then(response => {
                     removeTyping();
                     const cleanReply = extractTextFromResponse(response);
@@ -581,7 +558,7 @@
                 .catch(error => {
                     removeTyping();
                     chatSessions[currentSessionId].messages.push({
-                        text: `⚠️ Gagal menganalisis gambar. Pastikan tautan langsung (Direct Link) valid. Detail galat: ${error.message || error}`,
+                        text: `⚠️ Gagal menganalisis gambar. Gambarnya terlalu misterius. Detail galat: ${error.message || error}`,
                         sender: "ai",
                         time: getFormattedTime()
                     });
@@ -590,16 +567,16 @@
                 });
         }
 
-        // Pembuatan Gambar Instan menggunakan gpt-image-2
+        // Pembuatan Gambar Instan
         function generateImage(prompt) {
-            showTyping(AI_NAME, "sedang melukis gambar indah untukmu...");
+            showTyping(AI_NAME, "sedang melukis realitas paralel...");
 
             puter.ai.txt2img(prompt, { model: "gpt-image-2" })
                 .then(imageElement => {
                     removeTyping();
                     if (imageElement && imageElement.src) {
                         chatSessions[currentSessionId].messages.push({
-                            text: `Selesai menggambar!`,
+                            text: `Nih, hasil manifestasi halusinasi visualnya!`,
                             sender: "ai",
                             type: "image",
                             imageUrl: imageElement.src,
@@ -607,7 +584,7 @@
                             time: getFormattedTime()
                         });
                     } else {
-                        throw new Error("Elemen gambar tidak valid.");
+                        throw new Error("Gagal memunculkan wujud gambar.");
                     }
                     saveToStorage();
                     renderMessages();
@@ -615,7 +592,7 @@
                 .catch(error => {
                     removeTyping();
                     chatSessions[currentSessionId].messages.push({
-                        text: `⚠️ Gagal menghasilkan gambar. Detail galat: ${error.message || error}`,
+                        text: `⚠️ Gagal menggambar. Imajinasi server sedang macet. Detail galat: ${error.message || error}`,
                         sender: "ai",
                         time: getFormattedTime()
                     });
@@ -630,10 +607,8 @@
             const question = inputField.value.trim();
             if (!question) return;
 
-            // Bersihkan input secepatnya untuk responsivitas UI
             inputField.value = "";
 
-            // Deteksi jika prompt berupa instruksi gambar eksplisit
             const imageKeywords = ["/image", "/draw", "buat gambar", "gambarkan", "buatkan gambar"];
             let triggerImageGeneration = false;
             let imagePrompt = question;
@@ -646,7 +621,6 @@
                 }
             }
 
-            // Daftarkan pesan input pengguna ke dalam daftar pesan sesi
             const time = getFormattedTime();
             chatSessions[currentSessionId].messages.push({
                 text: question,
@@ -654,23 +628,21 @@
                 time: time
             });
 
-            // Ganti Judul Obrolan jika ini pesan pertama dalam obrolan baru
             if (chatSessions[currentSessionId].messages.length === 1) {
                 const words = question.split(' ');
                 const cleanTitle = words.length > 4 ? words.slice(0, 4).join(' ') + '...' : question;
-                chatSessions[currentSessionId].title = cleanTitle + " 🐟";
+                chatSessions[currentSessionId].title = cleanTitle + " 🌀";
                 renderSessions();
             }
 
             saveToStorage();
             renderMessages();
 
-            // Jalankan generasi gambar jika terdeteksi
             if (triggerImageGeneration) {
                 if (!imagePrompt) {
                     removeTyping();
                     chatSessions[currentSessionId].messages.push({
-                        text: `⚠️ Silakan berikan deskripsi gambar yang ingin dibuat setelah kata perintah. Contoh: /image pemandangan sawah hijau yang tenang`,
+                        text: `⚠️ Tolong berikan deskripsi gambar absurd setelah perintah. Contoh: /image kucing naik ojek online ke galaksi lain`,
                         sender: "ai",
                         time: getFormattedTime()
                     });
@@ -682,27 +654,24 @@
                 return;
             }
 
-            // Tampilkan animasi mengetik default
             showTyping(AI_NAME);
 
-            // Bangun instruksi persona
+            // Bangun instruksi persona Asli Ini (Absurd)
             const selectedPersona = document.getElementById('persona').value;
             let personaPrompt = "";
 
             if (selectedPersona === 'sarcastic') {
-                personaPrompt = "Anda adalah Iwak AI yang berjiwa komedi sarkastik, cerdas, suka mengejek secara humoris tapi tetap membantu menyelesaikan masalah dengan solusi valid.";
+                personaPrompt = "Anda adalah 'Asli Ini', AI yang cerdas tapi suka menyindir dengan gaya sarkasme tingkat tinggi, kocak, dan senang memutarbalikkan logika secara sarkastik.";
             } else if (selectedPersona === 'coder') {
-                personaPrompt = "Anda adalah seorang insinyur pemrograman senior (Senior Software Engineer). Berikan jawaban yang penuh dengan kode pemrograman bersih, efisien, dengan arsitektur modern dan ringkas tanpa penjelasan bertele-tele.";
+                personaPrompt = "Anda adalah 'Asli Ini', seorang insinyur pemrograman absurd. Berikan kode pemrograman yang valid, tapi jelaskan kodenya dengan analogi ngawur, tidak masuk akal, namun tetap jenius secara teknis.";
             } else if (selectedPersona === 'wise') {
-                personaPrompt = "Anda adalah seorang guru spiritual kuno yang bijaksana. Jawablah dengan metafora filosofis, menenangkan hati, dan penuh dengan kearifan lokal.";
+                personaPrompt = "Anda adalah 'Asli Ini', guru filsafat sesat yang sok bijak. Jawablah pertanyaan dengan metafora absurd, terdengar sangat dalam tapi isinya kosong melompong dan mengocok perut.";
             } else {
-                personaPrompt = "Anda adalah Iwak AI, asisten AI ramah, solutif, cerdas, bersahabat, siap menjawab segala pertanyaan dengan akurat.";
+                personaPrompt = "Anda adalah 'Asli Ini', AI Absurd yang memiliki kepribadian unik, nyeleneh, senang melontarkan humor tak terduga, menjawab dengan sudut pandang jungkir balik namun tetap memberikan solusi substansial di akhirnya.";
             }
 
-            // Gabungkan instruksi persona ke dalam instruksi obrolan Puter AI
-            const fullPrompt = `${personaPrompt}\n\nPertanyaan pengguna: ${question}`;
+            const fullPrompt = `${personaPrompt}\n\nPertanyaan pengguna:${question}`;
 
-            // Panggilan API Puter.ai v2 dengan model paling mutakhir (gpt-5.4-nano)
             puter.ai.chat(fullPrompt, { model: "gpt-5.4-nano" })
                 .then(response => {
                     removeTyping();
@@ -718,7 +687,7 @@
                 .catch(error => {
                     removeTyping();
                     chatSessions[currentSessionId].messages.push({
-                        text: `⚠️ Maaf, ada kendala koneksi saat menghubungi server Iwak AI. Detail galat: ${error.message || error}`,
+                        text: `⚠️ Waduh, server Asli Ini sedang tersesat di dimensi lain. Detail: ${error.message || error}`,
                         sender: "ai",
                         time: getFormattedTime()
                     });
@@ -727,7 +696,7 @@
                 });
         }
 
-        // Fungsionalitas Copy ke Clipboard (Ramah iFrame)
+        // Fungsionalitas Copy ke Clipboard
         function copyToClipboard(text) {
             const el = document.createElement('textarea');
             el.value = text;
@@ -736,10 +705,9 @@
             document.execCommand('copy');
             document.body.removeChild(el);
 
-            // Pop-up Notifikasi Sederhana
             const toast = document.createElement('div');
             toast.className = 'fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-emerald-600 text-white text-xs px-4 py-2 rounded-full shadow-lg z-50 transition duration-300';
-            toast.innerText = '✅ Disalin ke papan klip!';
+            toast.innerText = '✅ Berhasil disalin!';
             document.body.appendChild(toast);
             
             setTimeout(() => {
@@ -748,19 +716,16 @@
             }, 2000);
         }
 
-        // Fungsionalitas Text to Speech (TTS) Browser
+        // Fungsionalitas Text to Speech (TTS)
         function speakText(text) {
             if ('speechSynthesis' in window) {
-                // Hentikan suara yang sedang berjalan agar tidak tumpang tindih
                 window.speechSynthesis.cancel();
-                
-                // Bersihkan Markdown mentah sebelum disuarakan agar lebih terdengar alami
                 const cleanText = text.replace(/[#*`_\[\]]/g, '');
                 const utterance = new SpeechSynthesisUtterance(cleanText);
-                utterance.lang = 'id-ID'; // Menggunakan suara bahasa Indonesia
+                utterance.lang = 'id-ID';
                 window.speechSynthesis.speak(utterance);
             } else {
-                alert('Fasilitas suara tidak didukung oleh browser Anda.');
+                alert('Browser Anda tidak mendukung fitur suara.');
             }
         }
     </script>
